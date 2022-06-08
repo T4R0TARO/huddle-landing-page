@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  font: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  font: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+span,
+img,
+i {
+  display: block;
+}
+
+.main-container {
+  background: hsl(0deg, 100%, 99%);
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
