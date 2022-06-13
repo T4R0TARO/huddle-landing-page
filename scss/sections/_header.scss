@@ -15,12 +15,12 @@ header {
   margin-bottom: 155px;
 }
 
-.logo {
+.top-header__logo {
   height: 25px;
   width: auto;
 }
 
-.try-button {
+.top-header__try-button {
   padding: 10px 15px;
   background: $white;
   border-radius: 35px;
@@ -40,7 +40,7 @@ header {
   line-height: 2;
 }
 
-.get-started-button {
+.header__get-started-button {
   padding: 27px 50px;
   font-weight: 700;
   border-radius: 45px;
@@ -50,29 +50,32 @@ header {
   margin-bottom: 110px;
 }
 
-// FIXME: img must adjust to size of screen ✔
-
-.hero-image {
+.header__hero-image {
   margin: 0 auto;
   height: 100%;
   width: 100%;
 }
 
-// TODO: create hover effect on buttons
+.header__get-started-button:hover,
+.top-header__try-button:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
 // TODO: media queries
 
 // TABLET STYLES
 @media (min-width: 516px) {
-  .try-button {
+  .top-header__try-button {
     padding: 12px 45px;
   }
-  .logo {
+  .top-header__logo {
     height: 30px;
   }
   .header__p {
     font-size: 24px;
   }
-  .get-started-button {
+  .header__get-started-button {
     padding: 27px 120px;
   }
 }

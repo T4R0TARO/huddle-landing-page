@@ -1,0 +1,50 @@
+@use "../variables" as *;
+
+.about {
+  margin: 115px 40px;
+  text-align: center;
+}
+
+.about__card {
+  padding: 70px 20px 70px 20px;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 75px;
+}
+
+.about__card__img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about__card__h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about__card__p {
+  font-size: $fs-default;
+  color: $grayish-blue;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+// FIXME: bottom bottom
+.about__card-absolute {
+  padding: 100px 50px 0px 50px;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+// MEDIA QUIRIES
+
+@media (min-width: 516px) {
+  .about__card {
+    padding: 110px 70px 70px 70px;
+  }
+
+  .about__card__img {
+    margin-bottom: 125px;
+  }
+}

@@ -65,12 +65,12 @@ header {
   margin-bottom: 155px;
 }
 
-.logo {
+.top-header__logo {
   height: 25px;
   width: auto;
 }
 
-.try-button {
+.top-header__try-button {
   padding: 10px 15px;
   background: hsl(0deg, 0%, 100%);
   border-radius: 35px;
@@ -90,7 +90,7 @@ header {
   line-height: 2;
 }
 
-.get-started-button {
+.header__get-started-button {
   padding: 27px 50px;
   font-weight: 700;
   border-radius: 45px;
@@ -100,24 +100,74 @@ header {
   margin-bottom: 110px;
 }
 
-.hero-image {
+.header__hero-image {
   margin: 0 auto;
   height: 100%;
   width: 100%;
 }
 
+.header__get-started-button:hover,
+.top-header__try-button:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
 @media (min-width: 516px) {
-  .try-button {
+  .top-header__try-button {
     padding: 12px 45px;
   }
-  .logo {
+  .top-header__logo {
     height: 30px;
   }
   .header__p {
     font-size: 24px;
   }
-  .get-started-button {
+  .header__get-started-button {
     padding: 27px 120px;
+  }
+}
+.about {
+  margin: 115px 40px;
+  text-align: center;
+}
+
+.about__card {
+  padding: 70px 20px 70px 20px;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+  margin-bottom: 75px;
+}
+
+.about__card__img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.about__card__h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.about__card__p {
+  font-size: 18px;
+  color: hsl(208deg, 11%, 55%);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.about__card-absolute {
+  padding: 100px 50px 0px 50px;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+@media (min-width: 516px) {
+  .about__card {
+    padding: 110px 70px 70px 70px;
+  }
+  .about__card__img {
+    margin-bottom: 125px;
   }
 }
 
