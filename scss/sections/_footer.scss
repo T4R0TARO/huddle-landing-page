@@ -13,14 +13,6 @@ footer .top-header__logo {
   margin-bottom: 30px;
 }
 
-.footer__socials i {
-  color: $white;
-  border: 2px $white solid;
-  font-size: 20px;
-  padding: 15px;
-  border-radius: 50%;
-}
-
 // FIXME: NOT ON LAST CHILD
 .location-container,
 .phone-container,
@@ -30,31 +22,65 @@ footer .top-header__logo {
   margin-bottom: 25px;
 }
 
+.phone-container,
+.email-container {
+  align-items: center;
+}
+
 .email-container {
   margin-bottom: 60px;
 }
 
 // FIXME: NOT ON LAST CHILD
 .footer__links li {
+  position: relative;
   margin-bottom: 25px;
+}
+
+// bottom border hover affect
+.footer__links li::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 45px;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: $grayish-blue;
+}
+
+.footer__links li:hover::after {
+  width: 5rem;
+}
+
+.footer__links li:hover {
+  color: $grayish-blue;
 }
 
 .footer__links {
   margin-bottom: 80px;
 }
 
-//FIXME: have border under element ONLY
-.footer__links li:hover {
-  color: $grayish-blue;
-  border-bottom: 2px solid $grayish-blue;
-}
-
 .footer__socials {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .footer__socials i {
   margin: 0 10px;
+}
+
+.footer__socials i {
+  color: $white;
+  border: 2px $white solid;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.footer__socials i:hover {
+  color: $pink;
+  border: 2px solid $pink;
 }
 
 .copywrite {
@@ -63,7 +89,7 @@ footer .top-header__logo {
   padding-bottom: 50px;
 }
 
-// FIXME: change color to white
+// TODO: NEW SKILL!! CHANGE IMG TO COLOR WHITE
 footer .top-header__logo {
-  filter: invert(1);
+  filter: brightness(0) invert(1);
 }
