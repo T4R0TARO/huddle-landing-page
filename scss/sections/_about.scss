@@ -1,10 +1,5 @@
 @use "../variables" as *;
 
-// ABOUT SECTION
-// main {
-//   position: relative;
-// }
-
 .about {
   margin: 115px 40px 450px 40px;
   text-align: center;
@@ -14,7 +9,7 @@
 .about__card {
   padding: 70px 20px 70px 20px;
   border-radius: 25px;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0px 0px 10px #888888;
   margin-bottom: 75px;
 }
 
@@ -36,15 +31,20 @@
   font-weight: 400;
 }
 
-// FIXME: re-size absolute card
+// ABSOLUTE CARD
+// TODO: CENTER AN ABSOLUTE DIV
 .about__card-absolute {
   position: absolute;
   transform: translateY(30%);
-  width: 100%;
+  max-width: 900px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 100px 55px 0px 55px;
   border-radius: 25px;
   background: $white;
-  box-shadow: 5px 10px 18px #888888;
+  box-shadow: 0px 0px 10px #888888;
 }
 
 .about__card-absolute__h2 {
@@ -53,17 +53,27 @@
 
 .header__get-started-button-bottom {
   padding: 15px 25px;
-  // max-width: 400px;
   font-weight: 700;
   font-size: 18px;
   border-radius: 45px;
   background: $pink;
   color: $white;
-  box-shadow: 0 10px 30px -5px $grayish-blue;
+  box-shadow: 0px 0px 10px #888888;
   margin-bottom: 100px;
 }
 
+.header__get-started-button-bottom:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
 // MEDIA QUIRIES
+
+@media (max-width: 437px) {
+  .header__get-started-button-bottom {
+    font-size: 16px;
+  }
+}
 
 @media (min-width: 516px) {
   .about__card {
@@ -77,10 +87,6 @@
   .header__get-started-button-bottom {
     padding: 27px 50px;
   }
-
-  .about__card-absolute {
-    transform: translateY(40%);
-  }
 }
 
 @media (min-width: 662px) {
@@ -89,8 +95,5 @@
   }
   .about__card-absolute__h2 {
     font-size: 40px;
-  }
-  .about__card-absolute {
-    transform: translateY(25%);
   }
 }
