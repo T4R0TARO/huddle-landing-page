@@ -1,5 +1,7 @@
 @use "../variables" as *;
 
+// HEADER SECTION
+
 header {
   background: url("/images/bg-hero-mobile.svg") no-repeat;
   background-size: contain;
@@ -62,7 +64,7 @@ header {
   transform: scale(1.01);
 }
 
-// TODO: media queries
+// MEDIA QUERIES
 
 // TABLET STYLES
 @media (min-width: 516px) {
