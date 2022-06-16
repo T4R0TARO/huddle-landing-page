@@ -52,7 +52,7 @@ i {
 }
 
 header {
-  background: url("/images/bg-hero-mobile.svg") no-repeat;
+  background: url("../../images/bg-hero-mobile.svg") no-repeat;
   background-size: contain;
   background-color: hsl(191deg, 89%, 96%);
   padding: 55px 30px;
@@ -125,6 +125,39 @@ header {
   }
   .header__get-started-button {
     padding: 27px 120px;
+  }
+}
+@media (min-width: 1121px) {
+  .main__header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+  .header__container {
+    text-align: left;
+  }
+  header {
+    background: url("../../images/bg-hero-desktop.svg") no-repeat;
+    background-color: hsl(191deg, 89%, 96%);
+    padding: 80px;
+  }
+  .header__h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+  .header__p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .header__img-container {
+    position: relative;
+    height: 450px;
+    width: auto;
+  }
+  .header__hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
 .about {

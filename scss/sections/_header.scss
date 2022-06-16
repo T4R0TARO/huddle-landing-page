@@ -3,7 +3,7 @@
 // HEADER SECTION
 
 header {
-  background: url("/images/bg-hero-mobile.svg") no-repeat;
+  background: url("../../images/bg-hero-mobile.svg") no-repeat;
   background-size: contain;
   background-color: $background-header;
   padding: 55px 30px;
@@ -27,7 +27,6 @@ header {
   background: $white;
   border-radius: 35px;
   font-weight: 700;
-  // box-shadow: 0 10px 30px -5px $grayish-blue;
   box-shadow: 0px 0px 10px #888888;
   font-size: 18px;
 }
@@ -49,7 +48,6 @@ header {
   border-radius: 45px;
   background: $pink;
   color: $white;
-  // box-shadow: 0 10px 30px -5px $grayish-blue;
   box-shadow: 0px 0px 10px #888888;
   margin-bottom: 110px;
 }
@@ -81,5 +79,42 @@ header {
   }
   .header__get-started-button {
     padding: 27px 120px;
+  }
+}
+
+@media (min-width: 1121px) {
+  .main__header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+  .header__container {
+    text-align: left;
+  }
+  header {
+    background: url("../../images/bg-hero-desktop.svg") no-repeat;
+    background-color: $background-header;
+    padding: 80px;
+  }
+
+  .header__h1 {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+  .header__p {
+    font-size: $fs-default;
+    margin-bottom: 30px;
+  }
+
+  .header__img-container {
+    position: relative;
+    height: 450px;
+    width: auto;
+  }
+
+  .header__hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }
