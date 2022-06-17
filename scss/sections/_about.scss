@@ -99,3 +99,38 @@
     font-size: 40px;
   }
 }
+
+@media (min-width: 1121px) {
+  .about__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 170px;
+    height: 440px;
+    padding: 55px 32px 55px 120px;
+  }
+
+  .about__card__h2 {
+    font-size: 32px;
+    margin-bottom: 22px;
+  }
+
+  .about__card__p {
+    max-width: 600px;
+  }
+
+  .about__card__img-container {
+    height: 340px;
+  }
+
+  .flip__card {
+    order: 2;
+  }
+
+  .about__card__img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
