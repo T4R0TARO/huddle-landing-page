@@ -366,4 +366,32 @@ footer .top-header__logo {
   filter: brightness(0) invert(1);
 }
 
+@media (min-width: 1121px) {
+  footer {
+    padding: 200px 30px 30px 90px;
+  }
+  .footer__content-container {
+    display: flex;
+  }
+  .footer__contact-info {
+    margin-right: 100px;
+  }
+  .footer__links {
+    margin-right: 100px;
+  }
+  .footer__pin-text {
+    max-width: 400px;
+  }
+  .footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
+  .copywrite {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
