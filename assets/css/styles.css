@@ -366,7 +366,7 @@ footer .top-header__logo {
   filter: brightness(0) invert(1);
 }
 
-@media (min-width: 1121px) {
+@media (min-width: 1258px) {
   footer {
     padding: 200px 30px 30px 90px;
   }
@@ -386,6 +386,18 @@ footer .top-header__logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
+  }
+  .footer__links__career {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .footer__links__what-we-do {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .footer__links__faq {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
   .copywrite {
     display: flex;
