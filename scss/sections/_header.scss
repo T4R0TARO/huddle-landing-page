@@ -6,50 +6,50 @@ header {
   background: url("../../images/bg-hero-mobile.svg") no-repeat;
   background-size: contain;
   background-color: $background-header;
-  padding: 55px 30px;
+  padding: 3.4375rem 1.875rem;
   text-align: center;
 }
 
-.top-header {
+.header__top-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 155px;
+  margin-bottom: 9.6875rem;
 }
 
-.top-header__logo {
-  height: 25px;
+.header__top-header__logo {
+  height: 1.5625rem;
   width: auto;
 }
 
-.top-header__try-button {
-  padding: 10px 15px;
+.header__top-header__try-button {
+  padding: 10px;
   background: $white;
-  border-radius: 35px;
+  border-radius: 2.1875rem;
   font-weight: 700;
   box-shadow: 0px 0px 10px #888888;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .header__h1 {
-  font-size: 40px;
-  margin-bottom: 70px;
+  font-size: 1.8rem;
+  margin-bottom: 4.375rem;
 }
 
 .header__p {
-  font-size: 20px;
-  margin-bottom: 70px;
+  font-size: 1rem;
+  margin-bottom: 4.375rem;
   line-height: 2;
 }
 
 .header__get-started-button {
-  padding: 27px 50px;
+  padding: 1.6875rem 2.8125rem;
   font-weight: 700;
-  border-radius: 45px;
+  border-radius: 2.8125rem;
   background: $pink;
   color: $white;
   box-shadow: 0px 0px 10px #888888;
-  margin-bottom: 110px;
+  margin-bottom: 6.875rem;
 }
 
 .header__hero-image {
@@ -59,7 +59,7 @@ header {
 }
 
 .header__get-started-button:hover,
-.top-header__try-button:hover {
+.header__top-header__try-button:hover {
   opacity: 0.9;
   transform: scale(1.01);
 }
@@ -68,48 +68,58 @@ header {
 
 // TABLET STYLES
 @media (min-width: 516px) {
-  .top-header__try-button {
-    padding: 12px 45px;
+  .header__top-header__try-button {
+    padding: 12px 3.125rem;
   }
-  .top-header__logo {
-    height: 30px;
+  .header__top-header__logo {
+    height: 1.875rem;
+  }
+  .header__h1 {
+    font-size: 2.5rem;
   }
   .header__p {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .header__get-started-button {
-    padding: 27px 120px;
+    padding: 1.6875rem 7.5rem;
   }
 }
 
 @media (min-width: 1121px) {
-  .main__header-container {
+  .header__top-header {
+    margin-bottom: 3rem;
+  }
+
+  .header__main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 80px;
+    grid-gap: 5rem;
   }
-  .header__container {
+
+  .header__main-container__content {
     text-align: left;
   }
+
   header {
     background: url("../../images/bg-hero-desktop.svg") no-repeat;
     background-color: $background-header;
-    padding: 80px;
+    padding: 5rem;
   }
 
   .header__h1 {
-    font-size: 52px;
-    margin-bottom: 30px;
+    font-size: 2.7rem;
+    margin: 6rem 0 1.875rem 0;
   }
   .header__p {
     font-size: $fs-default;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .header__img-container {
     position: relative;
-    height: 450px;
+    height: 28.125rem;
     width: auto;
+    transform: scale(1.2);
   }
 
   .header__hero-image {

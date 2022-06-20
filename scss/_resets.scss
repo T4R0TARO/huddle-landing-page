@@ -29,6 +29,7 @@ a {
 
 ul li {
   list-style: none;
+  transition: $transition-default;
 }
 
 button {
@@ -36,6 +37,7 @@ button {
   font: inherit;
   background: none;
   cursor: pointer;
+  transition: $transition-default;
 }
 
 span,

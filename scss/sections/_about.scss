@@ -3,27 +3,27 @@
 // ABOUT SECTION
 
 .about {
-  margin: 115px 40px 450px 40px;
+  margin: 7.1875rem 2.5rem 28.125rem 2.5rem;
   text-align: center;
   position: relative;
 }
 
 .about__card {
-  padding: 70px 20px 70px 20px;
-  border-radius: 25px;
+  padding: 4.375rem 1.25rem 4.375rem 1.25rem;
+  border-radius: 1.5625rem;
   box-shadow: 0px 0px 10px #888888;
-  margin-bottom: 75px;
+  margin-bottom: 4.6875rem;
 }
 
 .about__card__img {
   height: 100%;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .about__card__h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 1.875rem;
 }
 
 .about__card__p {
@@ -38,30 +38,31 @@
 .about__card-absolute {
   position: absolute;
   transform: translateY(30%);
-  max-width: 900px;
+  max-width: 56.25rem;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px 55px 0px 55px;
-  border-radius: 25px;
+  padding: 6.25rem 1rem 0px 1rem;
+  border-radius: 1.5625rem;
   background: $white;
   box-shadow: 0px 0px 10px #888888;
 }
 
 .about__card-absolute__h2 {
-  margin-bottom: 60px;
+  font-size: 1.5rem;
+  margin-bottom: 3.75rem;
 }
 
 .header__get-started-button-bottom {
-  padding: 15px 25px;
+  padding: 0.9375rem 1.5625rem;
   font-weight: 700;
-  font-size: 18px;
-  border-radius: 45px;
+  font-size: 1.125rem;
+  border-radius: 2.8125rem;
   background: $pink;
   color: $white;
   box-shadow: 0px 0px 10px #888888;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
 }
 
 .header__get-started-button-bottom:hover {
@@ -79,24 +80,28 @@
 
 @media (min-width: 516px) {
   .about__card {
-    padding: 110px 70px 70px 70px;
+    padding: 6.875rem 4.375rem 4.375rem 4.375rem;
+  }
+
+  .about__card__h2 {
+    font-size: 2rem;
   }
 
   .about__card__img {
-    margin-bottom: 125px;
+    margin-bottom: 7.8125rem;
   }
 
   .header__get-started-button-bottom {
-    padding: 27px 50px;
+    padding: 1.6875rem 3.125rem;
   }
 }
 
 @media (min-width: 662px) {
   .header__get-started-button-bottom {
-    width: 400px;
+    width: 25rem;
   }
   .about__card-absolute__h2 {
-    font-size: 40px;
+    font-size: 2.1rem;
   }
 }
 
@@ -106,22 +111,22 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 170px;
-    height: 440px;
-    padding: 55px 32px 55px 120px;
+    gap: 10.625rem;
+    height: 27.5rem;
+    padding: 3.4375rem 2rem 3.4375rem 7.5rem;
   }
 
   .about__card__h2 {
-    font-size: 32px;
-    margin-bottom: 22px;
+    font-size: 2rem;
+    margin-bottom: 1.375rem;
   }
 
   .about__card__p {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 
   .about__card__img-container {
-    height: 340px;
+    height: 21.25rem;
   }
 
   .flip__card {
