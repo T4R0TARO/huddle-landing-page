@@ -34,16 +34,18 @@ footer .top-header__logo {
   margin-bottom: 3.75rem;
 }
 
-.footer__links li {
+.footer__links a {
   position: relative;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1.5625rem;
 }
 
 // bottom border hover affect
-.footer__links li::after {
+.footer__links a::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 2.4175rem;
   width: 0;
   height: 2px;
@@ -51,11 +53,11 @@ footer .top-header__logo {
   background: $grayish-blue;
 }
 
-.footer__links li:hover::after {
+.footer__links a:hover::after {
   width: 5rem;
 }
 
-.footer__links li:hover {
+.footer__links a:hover {
   color: $grayish-blue;
 }
 
