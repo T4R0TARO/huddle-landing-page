@@ -5,21 +5,20 @@
 footer {
   background: $very-dark-cyan;
   color: $white;
-  padding: 275px 35px 0 35px;
+  padding: 17.1875rem 2.1875rem 0 2.1875rem;
 }
 
 footer .top-header__logo {
-  height: 40px;
-  margin-bottom: 30px;
+  height: 2.5rem;
+  margin-bottom: 1.875rem;
 }
 
-// FIXME: NOT ON LAST CHILD
 .location-container,
 .phone-container,
 .email-container {
   display: flex;
-  gap: 30px;
-  margin-bottom: 25px;
+  gap: 1.875rem;
+  margin-bottom: 1.5625rem;
 }
 
 .phone-container,
@@ -27,14 +26,17 @@ footer .top-header__logo {
   align-items: center;
 }
 
-.email-container {
-  margin-bottom: 60px;
+.footer__pin-text {
+  max-width: 19rem;
 }
 
-// FIXME: NOT ON LAST CHILD
+.email-container {
+  margin-bottom: 3.75rem;
+}
+
 .footer__links li {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 // bottom border hover affect
@@ -42,7 +44,7 @@ footer .top-header__logo {
   content: "";
   position: absolute;
   bottom: -10px;
-  left: 45px;
+  left: 2.4175rem;
   width: 0;
   height: 2px;
   transform: translateX(-50%);
@@ -58,12 +60,12 @@ footer .top-header__logo {
 }
 
 .footer__links {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 .footer__socials {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .footer__socials i {
@@ -73,7 +75,7 @@ footer .top-header__logo {
 .footer__socials i {
   color: $white;
   border: 2px $white solid;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 15px;
   border-radius: 50%;
 }
@@ -85,18 +87,17 @@ footer .top-header__logo {
 
 .copywrite {
   text-align: center;
-  font-size: 16px;
-  padding-bottom: 50px;
+  font-size: 1rem;
+  padding-bottom: 3.125rem;
 }
 
-// TODO: NEW SKILL!! CHANGE IMG TO COLOR WHITE
 footer .top-header__logo {
   filter: brightness(0) invert(1);
 }
 
 @media (min-width: 1258px) {
   footer {
-    padding: 200px 30px 30px 90px;
+    padding: 12.5rem 1.875rem 1.875rem 5.625rem;
   }
 
   .footer__content-container {
@@ -104,21 +105,17 @@ footer .top-header__logo {
   }
 
   .footer__contact-info {
-    margin-right: 100px;
+    margin-right: 6.25rem;
   }
 
   .footer__links {
-    margin-right: 100px;
-  }
-  .footer__pin-text {
-    max-width: 400px;
+    margin-right: 6.25rem;
   }
 
-  // FIXME: ORDER OF LINKS FOR DESKTOP
   .footer__links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 3.125rem;
   }
 
   .footer__links__career {
@@ -136,11 +133,9 @@ footer .top-header__logo {
     grid-row: 3 / 4;
   }
 
-  //FIXME: SOCIAL LINKS BREAK AT DESKTOP
-
   .copywrite {
     display: flex;
     justify-content: end;
-    margin-right: 50px;
+    margin-right: 3.125rem;
   }
 }
