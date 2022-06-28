@@ -17,18 +17,19 @@ header {
   margin-bottom: 9.6875rem;
 }
 
-.header__top-header__logo {
+.header__logo {
   height: 1.5625rem;
   width: auto;
 }
 
-.header__top-header__try-button {
+.header__try-button {
   padding: 10px;
   background: $white;
   border-radius: 2.1875rem;
   font-weight: 700;
   box-shadow: 0px 0px 10px #888888;
   font-size: 1rem;
+  color: black;
 }
 
 .header__h1 {
@@ -53,13 +54,13 @@ header {
 }
 
 .header__hero-image {
-  margin: 0 auto;
+  margin: 4rem auto;
   height: 100%;
   width: 100%;
 }
 
 .header__get-started-button:hover,
-.header__top-header__try-button:hover {
+.header__try-button:hover {
   opacity: 0.9;
   transform: scale(1.01);
 }
@@ -68,10 +69,10 @@ header {
 
 // TABLET STYLES
 @media (min-width: 516px) {
-  .header__top-header__try-button {
+  .header__try-button {
     padding: 12px 3.125rem;
   }
-  .header__top-header__logo {
+  .header__logo {
     height: 1.875rem;
   }
   .header__h1 {
@@ -81,7 +82,7 @@ header {
     font-size: 1.5rem;
   }
   .header__get-started-button {
-    padding: 1.6875rem 7.5rem;
+    padding: 1.6875rem 6.5rem;
   }
 }
 
@@ -96,7 +97,7 @@ header {
     grid-gap: 5rem;
   }
 
-  .header__main-container__content {
+  .header__content {
     text-align: left;
   }
 
@@ -112,7 +113,7 @@ header {
   }
   .header__p {
     font-size: $fs-default;
-    margin-bottom: 1.875rem;
+    margin-bottom: 3.875rem;
   }
 
   .header__img-container {
@@ -126,5 +127,9 @@ header {
     height: 100%;
     width: 100%;
     object-fit: contain;
+  }
+
+  .header__get-started-button {
+    padding: 1.6875rem 5.5rem;
   }
 }
