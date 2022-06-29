@@ -68,18 +68,19 @@ header {
   margin-bottom: 9.6875rem;
 }
 
-.header__top-header__logo {
+.header__logo {
   height: 1.5625rem;
   width: auto;
 }
 
-.header__top-header__try-button {
+.header__try-button {
   padding: 10px;
   background: hsl(0deg, 0%, 100%);
   border-radius: 2.1875rem;
   font-weight: 700;
   box-shadow: 0px 0px 10px #888888;
   font-size: 1rem;
+  color: black;
 }
 
 .header__h1 {
@@ -104,22 +105,22 @@ header {
 }
 
 .header__hero-image {
-  margin: 0 auto;
+  margin: 4rem auto;
   height: 100%;
   width: 100%;
 }
 
 .header__get-started-button:hover,
-.header__top-header__try-button:hover {
+.header__try-button:hover {
   opacity: 0.9;
   transform: scale(1.01);
 }
 
 @media (min-width: 516px) {
-  .header__top-header__try-button {
+  .header__try-button {
     padding: 12px 3.125rem;
   }
-  .header__top-header__logo {
+  .header__logo {
     height: 1.875rem;
   }
   .header__h1 {
@@ -129,7 +130,7 @@ header {
     font-size: 1.5rem;
   }
   .header__get-started-button {
-    padding: 1.6875rem 7.5rem;
+    padding: 1.6875rem 6.5rem;
   }
 }
 @media (min-width: 1121px) {
@@ -141,7 +142,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
   }
-  .header__main-container__content {
+  .header__content {
     text-align: left;
   }
   header {
@@ -155,7 +156,7 @@ header {
   }
   .header__p {
     font-size: 18px;
-    margin-bottom: 1.875rem;
+    margin-bottom: 3.875rem;
   }
   .header__img-container {
     position: relative;
@@ -167,6 +168,9 @@ header {
     height: 100%;
     width: 100%;
     object-fit: contain;
+  }
+  .header__get-started-button {
+    padding: 1.6875rem 5.5rem;
   }
 }
 .about {
@@ -202,13 +206,13 @@ header {
 
 .about__card-absolute {
   position: absolute;
-  transform: translateY(30%);
+  transform: translateY(50%);
   max-width: 56.25rem;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 6.25rem 1rem 0px 1rem;
+  padding: 6.25rem 1rem 5rem 1rem;
   border-radius: 1.5625rem;
   background: hsl(0deg, 0%, 100%);
   box-shadow: 0px 0px 10px #888888;

@@ -37,13 +37,13 @@
 //CENTER AN ABSOLUTE DIV
 .about__card-absolute {
   position: absolute;
-  transform: translateY(30%);
+  transform: translateY(50%);
   max-width: 56.25rem;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  padding: 6.25rem 1rem 0px 1rem;
+  padding: 6.25rem 1rem 5rem 1rem;
   border-radius: 1.5625rem;
   background: $white;
   box-shadow: 0px 0px 10px #888888;
